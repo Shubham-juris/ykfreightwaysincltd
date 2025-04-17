@@ -1,13 +1,23 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+
+
+
+import HomePage from './Pages/HomePage';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <>
-      <h1 class='text-3xl font-bold underline mt-14 py-20 text-center bg-stone-600'>
-        Hello world!
-      </h1>
+    <Navbar/>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+  
     </>
+    
   );
 }
 
