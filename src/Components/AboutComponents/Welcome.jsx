@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import backgroundImage from '../../assets/Aboutimages/welcomeabout.jpg';
-import buildingimage from '../../assets/Aboutimages/building.jpg';
+import backgroundImage from '../../assets/images/Aboutimages/welcomeabout.jpg';
+import buildingimage from '../../assets/images/Aboutimages/building.jpg';
 
 const Welcome = () => {
   const [locationCount, setLocationCount] = useState(0);
@@ -60,12 +60,12 @@ const Welcome = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
-      opacity: 1, // Corrected opacity to 1
+      opacity: 1, 
       transition: {
         delayChildren: 0.3,
         staggerChildren: 0.2,
       },
-    }, // Added the missing comma
+    }, 
   };
 
   const itemVariants = {
@@ -132,7 +132,7 @@ const Welcome = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
-                  stroke="#34ccff" // Changed icon color
+                  stroke="#34ccff" 
                   className="w-12 h-12"
                 >
                   <path
