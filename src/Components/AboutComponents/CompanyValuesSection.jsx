@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import testimonial from '../../assets/Aboutimages/testimonials3.jpg';
+
 
 import testimonial from '../../assets/images/Aboutimages/testimonials3.jpg'
 
