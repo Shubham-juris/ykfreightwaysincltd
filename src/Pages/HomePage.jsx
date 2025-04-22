@@ -3,6 +3,7 @@ import HeroSection from '../Components/HomePageComponents/HeroSEction'
 import ServicesSection from '../Components/HomePageComponents/ServiceSEction'
 import TestimonialSlider from '../Components/HomePageComponents/TestimonialsSection'
 import NewsLetter from '../Components/HomePageComponents/NewsLetter'
+import ImageCarousel from '../Components/ServicesComponents/ImageCarousel'
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
    <ServicesSection/>
    <TestimonialSlider/>
    <NewsLetter/>
+   <ImageCarousel/>
     </div>
   )
 }
