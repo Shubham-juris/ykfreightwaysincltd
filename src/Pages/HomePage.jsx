@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../Components/HomePageComponents/HeroSEction'
+import HeroSection from '../Components/HomePageComponents/HeroSection'
 import ServicesSection from '../Components/HomePageComponents/ServiceSection'
 import TestimonialSlider from '../Components/HomePageComponents/TestimonialsSection'
 import NewsLetter from '../Components/HomePageComponents/NewsLetter'
