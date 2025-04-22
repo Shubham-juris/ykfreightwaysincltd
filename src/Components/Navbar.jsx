@@ -20,12 +20,12 @@ const Navbar = () => {
           <Link to="/" className="text-cyan-400 font-semibold hover:underline">HOME</Link>
           <Link to="/about" className="text-black font-medium hover:text-cyan-400">COMPANY</Link>
           <Link to="/services" className="text-black font-medium hover:text-cyan-400">SERVICES</Link>
-          <a
-            href="#"
+          <Link to 
+            ="/contact"
             className="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition"
           >
             CONTACT US
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
