@@ -18,8 +18,8 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 items-center">
           <Link to="/" className="text-cyan-400 font-semibold hover:underline">HOME</Link>
-          <a href="#" className="text-black font-medium hover:text-cyan-400">COMPANY</a>
-          <a href="#" className="text-black font-medium hover:text-cyan-400">SERVICES</a>
+          <Link to="/about" className="text-black font-medium hover:text-cyan-400">COMPANY</Link>
+          <Link to="/services" className="text-black font-medium hover:text-cyan-400">SERVICES</Link>
           <a
             href="#"
             className="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition"
