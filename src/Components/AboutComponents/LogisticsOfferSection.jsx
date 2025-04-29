@@ -55,24 +55,24 @@ const LogisticsOfferSection = () => {
 
   return (
     <motion.div
-      className="bg-white py-12 md:py-16"
+      className="bg-white py-10 sm:py-12 md:py-16 lg:py-20"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
-      <div className="container mx-auto px-4 text-left">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <motion.h2
-          className="text-xl md:text-2xl font-bold text-gray-800 mb-2"
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 mb-2 sm:mb-3 md:mb-4"
           variants={headingVariants}
         >
           LOGISTIC OFFERS CUSTOMER-SPECIFIC LOGISTICS SOLUTIONS
         </motion.h2>
         <motion.div
-          className="bg-[#34ccff] h-1 w-10 mb-6"
+          className="bg-[#34ccff] h-1 w-10 mb-4 sm:mb-5 md:mb-6"
           variants={lineVariants}
         ></motion.div>
         <motion.p
-          className="text-gray-700 text-sm md:text-base"
+          className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed sm:leading-relaxed md:leading-loose"
           variants={textVariants}
         >
           Marfa Tumblr locavore, cray meh salvia Portland Carles chillwave fashion axe PBR. Squid farm-to-table McSweeney's mixtape try-hard, heirloom photo booth. Ethical four loko forage, messenger bag yr cold-pressed Bushwick. Butcher aesthetic roof party synth, pop-up organic 9-bit beard sartorial authentic jean shorts kale chips farm-to-table pug. Chambray XOXO bespoke biodiesel, hella seitan aesthetic master cleanse art party freegan raw denim pour-over Blue Bottle try-hard. Farm-to-table selfies mixtape shabby chic umami vinyl. Echo Park hoodie next level cardigan, Thundercats Williamsburg McSweeney's biodiesel Pinterest meggings butcher brunch Pitchfork cray mlkshk.

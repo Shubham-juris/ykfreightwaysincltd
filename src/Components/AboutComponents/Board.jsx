@@ -7,17 +7,17 @@ const BoardMemberCard = ({ name, title, description, imageUrl, isActive }) => {
         isActive ? "scale-95" : "scale-90"
       }`}
     >
-      <div className="flex">
-        <div className="w-1/4">
+      <div className="flex flex-col sm:flex-row">
+        <div className="w-full sm:w-1/3">
           {imageUrl && (
             <img
               src={imageUrl}
               alt={name}
-              className="w-90% h-auto object-cover"
+              className="w-full h-full object-cover"
             />
           )}
         </div>
-        <div className="w-2/3 p-4">
+        <div className="w-full sm:w-2/3 p-4">
           <h3 className="text-xl font-semibold text-gray-800 mb-1">{name}</h3>
           <p className="text-sm text-[#34ccff] mb-2">{title}</p>
           <p className="text-gray-600 text-sm">{description}</p>
@@ -50,9 +50,8 @@ const Board = () => {
       title: "Board Member",
       description:
         "Mixtape taxidermy, plaid crucifix, Cosby sweater occupy cold-pressed. Portland pop-up lo-fi PBR&B kale chips readymade. Flexitarian bitters Shoreditch literally paleo. Vice letterpress Bushwick direct trade fingerstache tattooed. Stumptown flannel mlkshk wayfarers forage, plaid VHS drinking vinegar quinoa YOLO.",
-      imageUrl: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg',
+      imageUrl: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg",
     },
-    
   ];
 
   const [activeTab, setActiveTab] = React.useState(0);
@@ -62,18 +61,20 @@ const Board = () => {
   };
 
   return (
-    <div className="mx-auto py-6">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">
+    <div className="mx-auto py-6 px-4 max-w-6xl">
+      <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center sm:text-left">
         BOARD OF DIRECTORS
       </h2>
-      <div className="flex">
-        <div className="w-1/4 pr-1">
+
+      <div className="flex flex-col md:flex-row gap-4">
+        {/* Sidebar */}
+        <div className="md:w-1/4 w-full">
           <div className="bg-gray-100 rounded-md shadow-md">
             <ul>
               {directorsData.map((director, index) => (
                 <li
                   key={index}
-                  className={`cursor-pointer px-4 py-2 ${
+                  className={`cursor-pointer px-4 py-2 text-sm md:text-base ${
                     activeTab === index
                       ? "bg-[#34ccff] text-white"
                       : "hover:bg-gray-200"
@@ -86,17 +87,18 @@ const Board = () => {
             </ul>
           </div>
         </div>
-        <div className="w-3/4">
+
+        {/* Main Content */}
+        <div className="md:w-3/4 w-full">
           {directorsData.map((director, index) => (
             <div
               key={index}
-              className={`${
-                activeTab === index ? "block" : "hidden"
-              } animate-fade-in`}
+              className={`${activeTab === index ? "block" : "hidden"} animate-fade-in`}
             >
               <BoardMemberCard {...director} isActive={activeTab === index} />
             </div>
           ))}
+
           <div className="flex justify-between mt-4 text-sm text-gray-500">
             <button
               onClick={() => setActiveTab((prev) => Math.max(0, prev - 1))}
@@ -107,9 +109,7 @@ const Board = () => {
             </button>
             <button
               onClick={() =>
-                setActiveTab((prev) =>
-                  Math.min(directorsData.length - 1, prev + 1)
-                )
+                setActiveTab((prev) => Math.min(directorsData.length - 1, prev + 1))
               }
               disabled={activeTab === directorsData.length - 1}
               className="focus:outline-none hover:text-[#34ccff] disabled:text-gray-300"
@@ -124,3 +124,4 @@ const Board = () => {
 };
 
 export default Board;
+ 

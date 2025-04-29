@@ -34,31 +34,31 @@ const Footer = () => {
 
         {/* Useful Links (Column 1) */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">USEFUL LINKS</h3>
+          <h3 className="text-lg font-semibold mb-4"></h3>
           <ul className="text-sm">
             <li className="mb-2">
               <a href="#" className="hover:text-[#34ccff]">
-                About Us
+                
               </a>
             </li>
             <li className="mb-2">
               <a href="#" className="hover:text-[#34ccff]">
-                Company Timeline
+                
               </a>
             </li>
             <li className="mb-2">
               <a href="#" className="hover:text-[#34ccff]">
-                History
+                
               </a>
             </li>
             <li className="mb-2">
               <a href="#" className="hover:text-[#34ccff]">
-                Services
+                
               </a>
             </li>
             <li>
               <a href="#" className="hover:text-[#34ccff]">
-                Contact Us
+                
               </a>
             </li>
           </ul>
@@ -130,7 +130,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="bg-gray-800 py-4 mt-8">
         <div className="container mx-auto px-4 flex justify-between items-center text-xs">
-          <p>© 2022 Logistic - All Rights Reserved</p>
+          <p>© 2025 Logistic - All Rights Reserved</p>
           <div className="flex space-x-4">
             <a href="#" className="hover:text-[#34ccff]">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
