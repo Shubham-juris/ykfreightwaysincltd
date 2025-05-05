@@ -108,7 +108,7 @@ const Footer = () => {
             Address: Slave Lake, Alberta.
           </p>
           <p className="text-sm mb-4">
-            Phone Number: +44 20 8788 7200
+            Phone Number: +1 587-907-8614
           </p>
 
           <h3 className="text-lg font-semibold mb-4">NEWSLETTER</h3>
