@@ -105,7 +105,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">CONTACT INFO</h3>
           <p className="text-sm mb-2">
-            Address: Global Logistic, London 45 Spring St. London
+            Address: Slave Lake, Alberta.
           </p>
           <p className="text-sm mb-4">
             Phone Number: +44 20 8788 7200
