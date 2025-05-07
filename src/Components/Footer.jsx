@@ -3,6 +3,21 @@ import logo from '../assets/images/HomePageImages/logo.png'
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-10">
+      {/* Google Map Embed */}
+<div className="mt-12">
+  <iframe
+    title="Trafficology Slave Lake Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.5421744944203!2d-114.77627352230083!3d55.28269427308859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x539f67f1b6d4f087%3A0x420e40021e64c8e0!2s215%20Main%20St%20NW%2C%20Slave%20Lake%2C%20AB%20T0G%202A1%2C%20Canada!5e0!3m2!1sen!2sca!4v1715080048840"
+    width="100%"
+    height="300"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="rounded-lg shadow-md"
+  />
+</div>
+
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* About Our Company */}
         <div>
