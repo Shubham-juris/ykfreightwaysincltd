@@ -1,10 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
-
-
-import testimonial from '../../assets/images/Aboutimages/testimonials3.jpg'
-
+import testimonial from '../../assets/images/Aboutimages/testimonials3.jpg';
 
 const CompanyValuesSection = () => {
   const containerVariants = {
@@ -107,16 +103,16 @@ const CompanyValuesSection = () => {
             className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3"
             variants={headingVariants}
           >
-            SOME COMPANY VALUES
+            WHY CHOOSE YK FREIGHTWAYS
           </motion.h2>
           <motion.div className="bg-[#34ccff] h-1 w-10 mb-5" variants={lineVariants}></motion.div>
 
           <motion.div className="flex flex-wrap gap-2 mb-6" variants={buttonVariants}>
-            {['Safety', 'Trust', 'Leading', 'Award Winner'].map((label, index) => (
+            {['Safety First', 'Reliable Network', '24/7 Support', 'Certified & Trusted'].map((label, index) => (
               <motion.button
                 key={label}
                 className={`${
-                  label === 'Award Winner'
+                  label === 'Certified & Trusted'
                     ? 'bg-[#34ccff] text-white'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                 } font-medium py-2 px-4 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#34ccff]`}
@@ -131,7 +127,9 @@ const CompanyValuesSection = () => {
             className="text-gray-700 text-sm sm:text-base leading-relaxed"
             variants={leftTextVariants}
           >
-            Mixtape taxidermy plaid crucifix, Cosby sweater occupy cold-pressed Portland pop-up to-fi PBR&B kale chips readymade. Flexitarian bitters Shoreditch literally paleo, Vice letterpress Bushwick direct trade fingerstache tattooed. Stumptown flannel mlkshk wayfarers forage, plaid VHS drinking vinegar quinoa YOLO.
+            At YK Freightways, we believe in delivering peace of mind with every shipment. From rigorous safety protocols
+            to modern tracking systems, our services are designed for dependability and precision.
+            Our team is committed to ensuring your cargo arrives safely, on time, every time.
           </motion.p>
         </div>
 
@@ -141,36 +139,14 @@ const CompanyValuesSection = () => {
             className="text-gray-700 text-sm sm:text-base mb-6 leading-relaxed"
             variants={rightTextVariants}
           >
-            Marfa Tumblr locavore, cray meh salvia Portland Carles chillwave fashion axe PBR.
-            Squid farm-to-table McSweeney's mixtape try-hard, heirloom photo booth.
-            Ethical four loko forage, messenger bag yr cold-pressed Bushwick.
+            We’ve built long-term partnerships across industries by consistently exceeding expectations.
+            Whether it's last-mile delivery or international freight forwarding, YK Freightways stands for professionalism,
+            trust, and seamless logistics support — no matter the distance.
           </motion.p>
 
           <div className="flex items-center justify-start sm:justify-end">
-            <div className="text-left">
-              <motion.p
-                className="font-semibold text-gray-800 text-sm"
-                variants={rightTextVariants}
-              >
-                Valeria Kindergarten
-              </motion.p>
-              <motion.p
-                className="text-gray-500 text-xs"
-                variants={rightTextVariants}
-              >
-                Goldie / Logistic Department
-              </motion.p>
-            </div>
-            <motion.div
-              className="ml-4 w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden"
-              variants={imageVariants}
-            >
-              <img
-                src={testimonial}
-                alt="Valeria Kindergarten"
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
+            
+           
           </div>
 
           <motion.div

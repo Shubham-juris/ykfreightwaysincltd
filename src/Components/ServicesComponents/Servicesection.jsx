@@ -1,74 +1,3 @@
-// import { FaWarehouse, FaUmbrella, FaCompass, FaTruck } from 'react-icons/fa';
-// import { motion } from 'framer-motion';
-
-// const cardVariants = {
-//   initial: { opacity: 0, y: 20 },
-//   animate: { opacity: 1, y: 0 },
-// };
-
-// const ServiceCard = ({ icon, title, description }) => {
-//   return (
-//     <motion.div
-//       className="bg-white rounded-md shadow-md p-6 flex flex-col items-center text-center"
-//       variants={cardVariants}
-//     >
-//       <div className="text-[#34ccff] text-4xl mb-4">{icon}</div>
-//       <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
-//       <p className="text-gray-600 text-sm">{description}</p>
-//     </motion.div>
-//   );
-// };
-
-// const ServicesSection = () => {
-//   const servicesData = [
-//     {
-//       icon: <FaWarehouse />,
-//       title: 'Professional Storage',
-//       description:
-//         'Trust fund paleo cray swag, health goth mixtape Carles deep v mustache craft beer retro Williamsburg High Life Godard. go\'s narwhal drinking vinegar gentrify lo-fi. Cray Austin Neutra farm-to-table pork belly Pitchfork, Odd Future food truck go\'s Helvetica.',
-//     },
-//     {
-//       icon: <FaUmbrella />,
-//       title: 'Professional Distribution',
-//       description:
-//         'Trust fund paleo cray swag, health goth mixtape Carles deep v mustache craft beer retro Williamsburg High Life Godard. go\'s narwhal drinking vinegar gentrify lo-fi. Cray Austin Neutra farm-to-table pork belly Pitchfork, Odd Future food truck go\'s Helvetica.',
-//     },
-//     {
-//       icon: <FaCompass />,
-//       title: 'Cross Docking',
-//       description:
-//         'Trust fund paleo cray swag, health goth mixtape Carles deep v mustache craft beer retro Williamsburg High Life Godard. go\'s narwhal drinking vinegar gentrify lo-fi. Cray Austin Neutra farm-to-table pork belly Pitchfork, Odd Future food truck go\'s Helvetica.',
-//     },
-//     {
-//       icon: <FaTruck />,
-//       title: 'Dedicated Warehouses',
-//       description:
-//         'Trust fund paleo cray swag, health goth mixtape Carles deep v mustache craft beer retro Williamsburg High Life Godard. go\'s narwhal drinking vinegar gentrify lo-fi. Cray Austin Neutra farm-to-table pork belly Pitchfork, Odd Future food truck go\'s Helvetica.',
-//     },
-//   ];
-
-//   return (
-//     <div className="container mx-auto py-12">
-//       <motion.div
-//         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-//         initial="initial"
-//         animate="animate"
-//         transition={{ staggerChildren: 0.2 }}
-//       >
-//         {servicesData.map((service, index) => (
-//           <ServiceCard
-//             key={index}
-//             icon={service.icon}
-//             title={service.title}
-//             description={service.description}
-//           />
-//         ))}
-//       </motion.div>
-//     </div>
-//   );
-// };
-
-// export default ServicesSection;
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -81,25 +10,25 @@ const services = [
   {
     title: "Transport of Packaged Goods",
     description:
-      "Truffaut skateboard hashtag, pork belly Odd Future bespoke paleo forage before they sold out meggings Banksy cred.",
+      "We provide secure, efficient, and timely transportation of all types of packaged goods across the country with utmost professionalism.",
     icon: <RiBox3Line className="text-cyan-400" size={50} />,
   },
   {
     title: "National Road Transport",
     description:
-      "Truffaut skateboard hashtag, pork belly Odd Future bespoke paleo forage before they sold out meggings Banksy cred.",
+      "YK Freightways specializes in reliable national road transport, ensuring your cargo reaches every corner of the country seamlessly.",
     icon: <MdLocalShipping className="text-cyan-400" size={50} />,
   },
   {
     title: "Warehousing and Storage",
     description:
-      "Truffaut skateboard hashtag, pork belly Odd Future bespoke paleo forage before they sold out meggings Banksy cred.",
+      "We offer modern, secure, and spacious warehousing facilities to accommodate short- and long-term storage needs for all business sizes.",
     icon: <MdWarehouse className="text-cyan-400" size={50} />,
   },
   {
     title: "Forwarding Services",
     description:
-      "Truffaut skateboard hashtag, pork belly Odd Future bespoke paleo forage before they sold out meggings Banksy cred.",
+      "Our expert forwarding solutions ensure your shipments are processed quickly, efficiently, and delivered on time, every time.",
     icon: <FiSend className="text-cyan-400" size={50} />,
   },
 ];
@@ -108,12 +37,18 @@ export default function ServicesSection() {
   return (
     <div className="bg-white text-gray-600 py-20 px-4">
       <div className="flex flex-col gap-10 max-w-6xl mx-auto text-center">
+        {/* Section Title */}
         <div className="flex flex-col gap-5">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">OUR SERVICES</h2>
-        <div className="h-1 w-10 mx-auto bg-cyan-400 mb-12 rounded"></div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">
+            Providing First Class Freight Services
+          </h2>
+          <p className="text-lg text-[#34ccff] font-semibold">
+            with <span className="text-gray-800">YK Freightways</span>
+          </p>
+          <div className="h-1 w-10 mx-auto bg-cyan-400 mb-12 rounded"></div>
         </div>
-      
 
+        {/* Services List */}
         <div className="grid md:grid-cols-2 gap-20">
           {services.map((service, index) => (
             <div key={index} className="flex items-start gap-6">
@@ -124,7 +59,9 @@ export default function ServicesSection() {
                 {service.icon}
               </motion.div>
               <div className="text-left">
-                <h4 className="text-2xl font-semibold mb-2">{service.title}</h4>
+                <h4 className="text-2xl font-semibold mb-2">
+                  {service.title}
+                </h4>
                 <p className="text-sm text-gray-600">{service.description}</p>
               </div>
             </div>

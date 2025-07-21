@@ -18,9 +18,7 @@ const Mission = () => {
         <div className="w-full md:w-1/2 lg:w-1/3 text-center md:text-left animate-slide-in-left">
           <h2 className="text-3xl font-bold mb-4">MISSION</h2>
           <p className="text-base sm:text-lg opacity-80 leading-relaxed">
-            Mixtape taxidermy plaid crucifix. Cosby sweater occupy cold-pressed Portland pop-up lo-fi PBR&B kale chips readymade.
-            Flexitarian bitters Shoreditch literally paleo. Vice letterpress Bushwick direct trade fingerstache tattooed.
-            Stumptown flannel mlkshk wayfarers forage, plaid VHS drinking vinegar quinoa YOLO.
+            Our mission at <strong>YK Freightways</strong> is to deliver reliable, efficient, and innovative logistics solutions that empower businesses to grow. We are committed to excellence in every shipment — ensuring timely deliveries, safe handling, and customer satisfaction through cutting-edge technology and dedicated service.
           </p>
         </div>
 
@@ -28,9 +26,7 @@ const Mission = () => {
         <div className="w-full md:w-1/2 lg:w-1/3 text-center md:text-left animate-slide-in-right">
           <h2 className="text-3xl font-bold mb-4">VISION</h2>
           <p className="text-base sm:text-lg opacity-80 leading-relaxed">
-            Mixtape taxidermy plaid crucifix. Cosby sweater occupy cold-pressed Portland pop-up lo-fi PBR&B kale chips readymade.
-            Flexitarian bitters Shoreditch literally paleo. Vice letterpress Bushwick direct trade fingerstache tattooed.
-            Stumptown flannel mlkshk wayfarers forage, plaid VHS drinking vinegar quinoa YOLO.
+            Our vision is to become a leading force in the logistics industry across Canada and beyond, recognized for our integrity, agility, and customer-focused approach. We aim to build a future where businesses of all sizes can seamlessly connect to the world through YK Freightways' trusted network.
           </p>
         </div>
       </div>

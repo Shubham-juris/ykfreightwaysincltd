@@ -4,14 +4,17 @@ const ProgressBar = ({ label, value }) => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setWidth(value);
-    }, 300); // Add a small delay for the animation to be visible
+    }, 300);
+    return () => clearTimeout(timeout);
   }, [value]);
 
   return (
     <div className="mb-4">
-      <div className="text-sm text-gray-700 mb-1">{label} {value}%</div>
+      <div className="text-sm text-gray-700 mb-1">
+        {label} <span className="font-medium text-gray-800">{value}%</span>
+      </div>
       <div className="bg-gray-200 rounded-full h-4 relative overflow-hidden">
         <div
           className="bg-[#34ccff] h-full rounded-full absolute left-0 top-0 transition-all duration-500"
@@ -30,17 +33,15 @@ const ProgressBar = ({ label, value }) => {
 const WarehousingSolutions = () => {
   return (
     <div className="bg-white py-8 px-6 rounded-md shadow-md">
-      <h2 className="text-xl font-semibold text-gray-800 mb-4">Warehousing Solutions</h2>
-      <p className="text-gray-600 text-sm mb-6">
-        Trust fund paleo cray swag, health goth mixtape Carles deep v mustache craft beer
-        retro Williamsburg High Life Godard. go's narwhal drinking vinegar gentrify lo-fi. Cray
-        Austin Neutra farm-to-table pork belly Pitchfork, Odd Future food truck go's Helvetica.
+      <h2 className="text-xl font-bold text-gray-800 mb-4">Warehousing Solutions</h2>
+      <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+        At YK Freightways, our warehousing solutions are designed to ensure safety, efficiency, and real-time availability. From advanced material handling to transparent operations, we offer seamless storage and distribution.
       </p>
       <div>
-        <ProgressBar label="Your Products are Always Available" value={98} />
-        <ProgressBar label="Materials Handling Equipment" value={80} />
-        <ProgressBar label="High Transparency" value={70} />
-        <ProgressBar label="Outgoing Shipment" value={65} />
+        <ProgressBar label="Product Availability" value={98} />
+        <ProgressBar label="Advanced Handling Equipment" value={80} />
+        <ProgressBar label="Operational Transparency" value={70} />
+        <ProgressBar label="Outgoing Shipments Efficiency" value={65} />
       </div>
     </div>
   );
@@ -48,13 +49,11 @@ const WarehousingSolutions = () => {
 
 const OtherServices = () => {
   return (
-    <div className="bg-white py-8 px-6 rounded-md shadow-md mt-8">
-      <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center">OTHER SERVICES</h2>
-      <div className="w-16 h-1 bg-gray-300 rounded-full mx-auto mb-6"></div>
-      <p className="text-gray-600 text-sm text-center">
-        Artisan selvage art party Godard, forage Austin Pitchfork. Organic tofu vinyl VHS cold-pressed
-        gastropub. Tousled letterpress actually irony Vice farm-to-table. Street art you probably haven't
-        heard of them bicycle rights Cosby sweater small batch, PBR&B lomo.
+    <div className="bg-white py-8 px-6 rounded-md shadow-md mt-8 md:mt-0">
+      <h2 className="text-xl font-bold text-gray-800 mb-4 text-center">Other Services</h2>
+      <div className="w-16 h-1 bg-cyan-400 rounded-full mx-auto mb-6"></div>
+      <p className="text-gray-600 text-sm text-center leading-relaxed">
+        Beyond warehousing, YK Freightways offers a range of value-added logistics solutions including freight forwarding, distribution, and nationwide transport — all designed to move your business forward with speed and accuracy.
       </p>
     </div>
   );
@@ -62,7 +61,7 @@ const OtherServices = () => {
 
 const ServicesSection = () => {
   return (
-    <div className="container mx-auto py-12">
+    <div className="container mx-auto py-12 px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <WarehousingSolutions />
         <OtherServices />

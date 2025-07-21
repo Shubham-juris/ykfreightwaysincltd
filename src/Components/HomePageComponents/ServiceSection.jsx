@@ -10,25 +10,25 @@ const services = [
   {
     title: "Transport of Packaged Goods",
     description:
-      "Truffaut skateboard hashtag, pork belly Odd Future bespoke paleo forage before they sold out meggings Banksy cred.",
+      "The transport of packaged goods involves the safe, efficient, and timely movement of products that are securely packed in containers, boxes, pallets, or crates. This method of transport plays a crucial role in supply chains across various industries including retail, manufacturing, pharmaceuticals, and food services.",
     icon: <RiBox3Line className="text-cyan-400" size={50} />,
   },
   {
     title: "National Road Transport",
     description:
-      "Truffaut skateboard hashtag, pork belly Odd Future bespoke paleo forage before they sold out meggings Banksy cred.",
+      "National Road Transport refers to the movement of goods and passengers within the borders of a country using a network of roads and highways. It plays a vital role in a country’s economy by connecting cities, towns, industries, and markets.",
     icon: <MdLocalShipping className="text-cyan-400" size={50} />,
   },
   {
     title: "Warehousing and Storage",
     description:
-      "Truffaut skateboard hashtag, pork belly Odd Future bespoke paleo forage before they sold out meggings Banksy cred.",
+      "Warehousing and storage involve the systematic process of storing goods, raw materials, or finished products in a designated facility until they are needed for production, distribution, or sale. It is a critical component of the supply chain that ensures inventory is managed efficiently and products are available when required.",
     icon: <MdWarehouse className="text-cyan-400" size={50} />,
   },
   {
     title: "Forwarding Services",
     description:
-      "Truffaut skateboard hashtag, pork belly Odd Future bespoke paleo forage before they sold out meggings Banksy cred.",
+      "Forwarding services, also known as freight forwarding, involve the coordination and management of the shipment of goods from one location to another—nationally or internationally. A freight forwarder acts as an intermediary between the shipper and transportation services, ensuring that goods are moved efficiently, cost-effectively, and in compliance with legal requirements.",
     icon: <FiSend className="text-cyan-400" size={50} />,
   },
 ];
@@ -38,10 +38,9 @@ export default function ServicesSection() {
     <div className="bg-[#0F172A] text-white py-20 px-4">
       <div className="flex flex-col gap-10 max-w-6xl mx-auto text-center">
         <div className="flex flex-col gap-5">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">OUR SERVICES</h2>
-        <div className="h-1 w-10 mx-auto bg-cyan-400 mb-12 rounded"></div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">OUR SERVICES</h2>
+          <div className="h-1 w-10 mx-auto bg-cyan-400 mb-12 rounded"></div>
         </div>
-      
 
         <div className="grid md:grid-cols-2 gap-20">
           {services.map((service, index) => (

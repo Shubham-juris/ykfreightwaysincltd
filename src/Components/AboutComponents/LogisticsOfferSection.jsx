@@ -65,7 +65,7 @@ const LogisticsOfferSection = () => {
           className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 mb-2 sm:mb-3 md:mb-4"
           variants={headingVariants}
         >
-          LOGISTIC OFFERS CUSTOMER-SPECIFIC LOGISTICS SOLUTIONS
+          YK FREIGHTWAYS OFFERS CUSTOMER-SPECIFIC LOGISTICS SOLUTIONS
         </motion.h2>
         <motion.div
           className="bg-[#34ccff] h-1 w-10 mb-4 sm:mb-5 md:mb-6"
@@ -75,7 +75,7 @@ const LogisticsOfferSection = () => {
           className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed sm:leading-relaxed md:leading-loose"
           variants={textVariants}
         >
-          Marfa Tumblr locavore, cray meh salvia Portland Carles chillwave fashion axe PBR. Squid farm-to-table McSweeney's mixtape try-hard, heirloom photo booth. Ethical four loko forage, messenger bag yr cold-pressed Bushwick. Butcher aesthetic roof party synth, pop-up organic 9-bit beard sartorial authentic jean shorts kale chips farm-to-table pug. Chambray XOXO bespoke biodiesel, hella seitan aesthetic master cleanse art party freegan raw denim pour-over Blue Bottle try-hard. Farm-to-table selfies mixtape shabby chic umami vinyl. Echo Park hoodie next level cardigan, Thundercats Williamsburg McSweeney's biodiesel Pinterest meggings butcher brunch Pitchfork cray mlkshk.
+          At YK Freightways, we understand that every customer has unique logistics requirements. Our tailored solutions ensure seamless coordination of freight, warehousing, and transportation across Canada and international borders. Whether you need full truckload, LTL, or specialized freight services, our expert team works closely with you to streamline operations, reduce costs, and ensure timely deliveries. From packaging and storage to real-time tracking and final-mile delivery — we deliver excellence, every time.
         </motion.p>
       </div>
     </motion.div>

@@ -100,7 +100,7 @@ const Welcome = () => {
             ABOUT US
           </motion.h2>
           <motion.p className="text-lg sm:text-xl md:text-2xl text-[#34ccff] font-semibold mb-10" variants={itemVariants}>
-            Logistic is a global supplier of transport and logistics solutions. We have offices in more than 50 countries and an international network of partners and agents.
+            YK Freightways is a trusted name in global logistics, offering tailored transportation solutions by road, sea, and air. Operating across 50+ countries, we ensure reliable, cost-effective, and timely delivery of your goods with a strong commitment to service and innovation.
           </motion.p>
 
           {/* Counters */}
@@ -157,12 +157,10 @@ const Welcome = () => {
           {/* Text */}
           <div className="space-y-6 text-center md:text-left">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">
-              Comprehensive logistics and transportation solutions form the core of our business.
+              Driving logistics innovation with passion and precision.
             </h2>
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-              Mixtape taxidermy plaid crucifix, Cosby sweater occupy cold-pressed Portland pop-up tofu PBR&B kale chips readymade.
-              Flexitarian bitters Shoreditch literally paleo, Vice letterpress Bushwick direct trade fingerstache tattooed.
-              Stumptown flannel mlkshk wayfarers forage, plaid VHS drinking vinegar quinoa YOLO.
+              At <strong>YK Freightways</strong>, we combine technology, experience, and global reach to offer unmatched logistics and supply chain solutions. From local freight to international shipping, we ensure smooth, transparent, and secure deliveries at every stage. Trust us to move your business forward.
             </p>
           </div>
         </div>
