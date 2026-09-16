@@ -1,8 +1,9 @@
 {
   "routes": [
     {
-      "src": "/(.*)",
-      "status": 404
+      "source": "/(.*)",
+      "status": 404,
+      "dest": "/404.html"
     }
   ]
 }
